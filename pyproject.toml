@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "infrastructure_intro"
+version = "1.0.0"
+description = "A very brief introduction to python and packaged python code"
+authors = ["chase mateusiak <chase.mateusiak@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "infrastructure_intro"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.1.1"
+nbsphinx = "^0.9.2"
+ipykernel = "^6.25.0"
+autopep8 = "^2.0.2"
+furo = "^2023.7.26"
+flake8 = "^6.1.0"
+nbconvert = "^7.7.3"
+gradescope-utils = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
